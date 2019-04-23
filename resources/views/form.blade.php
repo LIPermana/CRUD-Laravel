@@ -20,7 +20,7 @@
       }
 
       .form{
-        width: 20%;
+        width: 25%;
       }
 
       label{
@@ -48,14 +48,16 @@
   <body>
     <div class="wrapper">
       <form class="form">
-        <label for="no">No</label><br>
-        <input type="text" id="no" /><br>
-        <label for="nama">Nama</label><br>
-        <input type="text" id="nama" /><br>
-        <label for="kelas">Kelas</label><br>
-        <input type="text" id="kelas" /><br>
-        <label for="password">Password</label><br>
-        <input type="password" id="password" /><br><br>
+        <label for="id">ID</label><br>
+        <input type="text" id="id" /><br>
+        <label for="judul">Judul</label><br>
+        <input type="text" id="judul" /><br>
+        <label for="penerbit">Penerbit</label><br>
+        <input type="text" id="penerbit" /><br>
+        <label for="tahun_terbit">Tahun terbit</label><br>
+        <input type="text" id="tahun_terbit" /><br>
+        <label for="pengarang">Pengarang</label><br>
+        <input type="text" id="pengarang" /><br><br>
         <input type="submit" name="submit" class="kirim">
       </form>
     </div>

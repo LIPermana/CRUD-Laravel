@@ -17,7 +17,7 @@ class CreateProjectsTable extends Migration
             $table->bigIncrements('id');
             $table->string('judul', 30);
             $table->string('penerbit', 20);
-            $table->tinyInteger('tahun_terbit', 4);
+            $table->tinyInteger('tahun_terbit');
             $table->string('pengarang', 50);
             $table->timestamps();
         });
