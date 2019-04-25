@@ -15,6 +15,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/form', function () {
-    return view('form');
-});
+Route::get('/form', 'FormController@input');
+Route::post('/form/input-process','FormController@inputprocess');

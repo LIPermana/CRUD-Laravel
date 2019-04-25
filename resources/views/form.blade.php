@@ -47,18 +47,20 @@
   </head>
   <body>
     <div class="wrapper">
-      <form class="form">
-        <label for="id">ID</label><br>
-        <input type="text" id="id" /><br>
+      <form class="form" action="{{action('FormController@inputprocess')}}" method="post">
+        {{ csrf_field() }}
         <label for="judul">Judul</label><br>
-        <input type="text" id="judul" /><br>
+        <input type="text" id="judul" name="judul" /><br>
         <label for="penerbit">Penerbit</label><br>
-        <input type="text" id="penerbit" /><br>
+        <input type="text" id="penerbit" name="penerbit"/><br>
         <label for="tahun_terbit">Tahun terbit</label><br>
-        <input type="text" id="tahun_terbit" /><br>
+        <input type="text" id="tahun_terbit" name="tahun_terbit"/><br>
         <label for="pengarang">Pengarang</label><br>
-        <input type="text" id="pengarang" /><br><br>
-        <input type="submit" name="submit" class="kirim">
+        <input type="text" id="pengarang" name="pengarang"/><br><br>
+        <input type="submit" name="submit" class="kirim" />
+        <button>
+          <a href="/">Kembali</a>
+        </button>
       </form>
     </div>
   </body>
