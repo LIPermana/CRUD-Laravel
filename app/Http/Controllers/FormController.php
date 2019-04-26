@@ -14,6 +14,13 @@ class FormController extends Controller
 
   public function inputprocess(Request $request)
   {
+    $request->validate([
+      'judul'=>'required',
+      'penerbit'=>'required',
+      'tahun_terbit'=>'required|integer',
+      'pengarang'=>'required'
+    ]);
+
     $buku = new Buku([
         'judul' => $request->get('judul'),
         'penerbit' => $request->get('penerbit'),
@@ -24,6 +31,13 @@ class FormController extends Controller
 
     // dd($request);
 
-    return redirect('/');
+    return redirect('/view')->with('Success','Data buku telah ditambahkan');
   }
+
+  public function view()
+  {
+    $buku = Buku::all();
+    return view('view', compact('buku'));
+  }
+
 }

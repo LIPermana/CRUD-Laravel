@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="{{ asset('/css/app.css') }}">
-    <title>Form</title>
+    <title>Perpustakaan</title>
     <style media="screen">
       html,
       body{
@@ -40,9 +40,28 @@
         border: none;
         color: #fff;
         font-weight: bold;
-        background-color: #00b0ff
+        background-color: #00b0ff;
+        transition-duration: 0.2s;
       }
-
+      .kirim:hover{
+        background-color: #2196f3;
+      }
+      .goto-view{
+        color: #fff;
+        background-color: #607d8b;
+        width: 100%;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        transition-duration: 0.2s;
+      }
+      .goto-view:hover{
+        color: white;
+        text-decoration: none;
+        background-color: #546e7a;
+      }
     </style>
   </head>
   <body>
@@ -58,9 +77,7 @@
         <label for="pengarang">Pengarang</label><br>
         <input type="text" id="pengarang" name="pengarang"/><br><br>
         <input type="submit" name="submit" class="kirim" />
-        <button>
-          <a href="/">Kembali</a>
-        </button>
+        <a href="/view" class="goto-view">Kembali</a>
       </form>
     </div>
   </body>

@@ -85,10 +85,8 @@
                 </div>
 
                 <div class="links">
-                    <a href="/form">Create</a>
-                    <a href="#">Read</a>
-                    <a href="#">Update</a>
-                    <a href="#">Delete</a>
+                    <a href="/view">Daftar Buku</a>
+                    <a href="#">Pinjaman</a>
                 </div>
             </div>
         </div>
